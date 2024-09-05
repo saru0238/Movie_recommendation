@@ -44,7 +44,3 @@ def index_from_movie(movie):
 def movie_from_index(i):
 	return df.iloc[i]['Series_Title']
 
-
-
-
-# Consider creating a user-item matrix if you're implementing collaborative filtering
