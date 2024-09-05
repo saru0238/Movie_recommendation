@@ -60,12 +60,10 @@ for index, row in df.iterrows():
 # Consider using natural language processing techniques like tokenization or stemming on text fields
 
 
-# Create numerical features:
-
-# Convert categorical variables to numerical (e.g., one-hot encoding for genres)
+# Convert categorical variables to numerical ( one-hot encoding for genres)
 #certificate
 
-# Normalize numerical features if needed (e.g., scale ratings to a 0-1 range)
+# Normalize numerical features if needed ( scale ratings to a 0-1 range)
 
 std=df['IMDB_Rating'].std(axis=0)
 # print(std)
@@ -101,7 +99,7 @@ df["Age"] = df["Released_Year"].apply(calculate_age)
 #Total number of votes
 total_votes=df['No_of_Votes'].sum()
 
-# Normalize votes (e.g., on a scale of 0-1) to compare popularity across movies
+# Normalize votes ( on a scale of 0-1) to compare popularity across movies
 
 #normalized_votes = (votes - min_votes) / (max_votes - min_votes)
 
